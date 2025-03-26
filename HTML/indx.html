@@ -7,21 +7,30 @@
     <link rel="stylesheet" href="../CSS/style.css">
     <script src="../JS/jquery-3.7.1.min.js"></script>
     <script>
-        $(document).ready(function(){
-            document.querySelector(".uno").addEventListener("click",change)
-        })
-        function change(){
-            $(".uno").toggleClass("dos")
-        }
+        $(document).ready(function() {
+            $('.mas').click(function() {
+                $('.formu').toggle();
+                if ($('.formu').is(':visible')) {
+                    $('.mas').text('../img/menos.png');
+                } else {
+                    $('.ocultar').text('../img/mas.png');
+                }
+            });
+        });
     </script>
 </head>
 <body>
-    <div class="countainer">
-        <img src="../IMG/logo.png" alt="" class ="logo"></div>
-        <div class="form-container">
-            <h2>Iniciar sesion</h2>
-            <input type="text" placeholder="Usuario" required> <br>
-            <input type="password" placeholder="Contraseña" required>
+        <div class="encabezado">
+            <h1 class="h1">Iniciar sesion</h1>
+            <img src="../IMG/mas.png" alt="" class="mas">
+            <img src="../IMG/menos.png" alt="" class="ocultar">
         </div>
+        <form class="formu">
+            <label for="text">Usuario</label>
+            <input type="text">
+            <label for="text">Contraseña</label>
+            <input type="password">
+        </form>
+    </div>
 </body>
 </html>
