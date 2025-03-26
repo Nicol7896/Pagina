@@ -1,0 +1,37 @@
+.header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.logo{
+    width: 70px;
+    height: 70px;
+}
+h2{
+    margin-left:200px ;
+}
+input{
+    display: block;
+    width: 250px;
+    margin-left: 200px;
+    padding: 8px;
+    background-color: plum;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.uno{
+    width: 50%;
+    background: violet;
+    padding: 5px;
+}
+.dos{
+    background: turquoise;
+    border-radius: 50;
+}
